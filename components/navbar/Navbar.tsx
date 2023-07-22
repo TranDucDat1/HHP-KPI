@@ -39,7 +39,7 @@ function getItem(
     } as MenuItem;
 }
 const items: MenuProps["items"] = [
-    getItem(<Link href="#">Trang chủ</Link>, "trangchu", <HomeOutlined />),
+    getItem(<Link href="#">Trang chủ</Link>, "trangchu", <HomeOutlined rev={undefined} />),
     getItem("Sơ đồ KPI", "sodokpi", <ApartmentOutlined />, [
         getItem(
             <Link href={linkSoDoKPIDon}>KPI đơn mục tiêu</Link>,
