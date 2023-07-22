@@ -1,0 +1,10 @@
+.navbar {
+    position:fixed;
+    top:0px;
+    width:100%;
+    text-align:center;
+}
+
+.navbar h1 {
+    color:red
+}
