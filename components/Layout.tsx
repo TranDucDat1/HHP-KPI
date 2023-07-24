@@ -55,7 +55,7 @@ export default function App(props: any) {
           <HeaderComponent color="red"/>
         </div>
         <div className={styles.content}>
-          Content
+          {props.children}
         </div>
       </div>
     </div>
