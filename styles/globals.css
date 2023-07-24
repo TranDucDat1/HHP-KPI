@@ -2,43 +2,8 @@
     --text: white;
     --nav_bg: #4c5bd4;
     --bg-hover: #2e3994;
-    /* --home: url(../images/logo-home.svg);
-    --logo-diagram: url(../images/logo-diagram.svg);
-    --icon-kpi-follow: url(../images/icon-kpi-follow.svg);
-    --icon-vote: url(../images/icon-vote.svg);
-    --icon-thiet-lap: url(../images/icon-thiet-lap.svg);
-    --icon-department: url(../images/icon-department.svg);
-    --icon-staff: url(../images/icon-staff.svg);
-    --icon-setting: url(../images/icon-setting.svg);
-    --icon-setting1: url(../images/icon-setting1.svg);
-    --icon-phan-quyen: url(../images/icon-phan-quyen.svg);
-    --icon-chuyen-doi-so: url(../images/icon-chuyen-doi-so.svg);
-    --icon-delete: url(../images/icon-delete.svg);
-    --hover-home: url(../images/logo-home.svg);
-    --hover-diagram: url(../images/logo-diagram.svg);
-    --hover-follow: url(../images/icon-kpi-follow.svg);
-    --hover-vote: url(../images/icon-vote.svg);
-    --hover-thiet-lap: url(../images/icon-thiet-lap.svg);
-    --hover-department: url(../images/icon-department.svg);
-    --hover-staff: url(../images/icon-staff.svg);
-    --hover-setting: url(../images/icon-setting.svg);
-    --hover-setting1: url(../images/icon-setting1.svg);
-    --hover-phan-quyen: url(../images/icon-phan-quyen.svg);
-    --hover-chuyen-doi-so: url(../images/icon-chuyen-doi-so.svg);
-    --hover-delete: url(../images/icon-delete.svg); */
     --bg-menu: #4c5bd4;
-    --user-name: #fff;
-    --user-id: #fff;
-    --mui-ten: #fff;
-    /* --icon-message: url(../images/icon-message.svg);
-    --icon-warnnig: url(../images/icon-nhac-nho.svg);
-    --icon-notify: url(../images/icon-notify2.svg);
-    --icon-menu: url(../images/icon-menu-tab.svg); */
     --white: #fff;
-}
-
-@media (prefers-color-scheme: dark) {
-
 }
 
 * {
@@ -55,14 +20,32 @@ body {
 
 }
 
-body {
-
+#NavMenu .ant-menu-item {
+    border-radius: 0 ;
+    margin: 0  ;
+    padding: 0px 20px !important;
+    width: 100%;
+    height: 50px !important;
+    background-color: #4c5bd4;
 }
 
-a {
-
+#NavMenu .ant-menu-item-only-child {
+    height: 43px !important;
+    line-height: 43px !important;
+    
 }
 
-@media (prefers-color-scheme: dark) {
+#NavMenu .ant-menu-submenu-title {
+    padding: 0px 20px !important;
+    margin: 0 !important;
+    height: 50px;
+    line-height: 50px;
+}
 
+.ant-menu-item:hover,
+.ant-menu-submenu-inline:hover {
+    background-color: #2e3994 !important;
+    border-radius: 0;
+    color: #fff !important;
+    width: 100%;
 }
