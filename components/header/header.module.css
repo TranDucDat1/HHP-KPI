@@ -1,0 +1,12 @@
+.hideOnSmallScreen {
+  width: 24px;
+  height: 24px;
+}
+
+/* layout.module.css */
+/* CSS cho kích thước màn hình lớn hơn hoặc bằng 1024px */
+@media (min-width: 1024px) {
+  .hideOnSmallScreen {
+    display: none;
+  }
+}
