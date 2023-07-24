@@ -1,23 +1,42 @@
 .main {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    background: #f7f8fc;
+    display: block;
+    /* display: flex; */
+    /* justify-content: space-between;
+    background: #f7f8fc; */
 }
 
 .nav {
-    width: 26%;
+    display: none;
 }
 .body {
     width: 100%;
     overflow: hidden;
 }
 .content {
-   
+    height: 1200px;
+    background-color: aqua;
 }
 .header {
-    
+    width: 100%;
     height: 79px;
     background-color: #ccc;
     z-index: 111;
 }
+
+/* layout.module.css */
+/* CSS cho kích thước màn hình lớn hơn hoặc bằng 1024px */
+@media (min-width: 1024px) {
+    /* .hideOnSmallScreen {
+      display: none;
+    } */
+    .main {
+        display: flex;
+        justify-content: space-between;
+        background: #f7f8fc;
+    }
+    .nav {
+        display: block;
+        width: 26%;
+    }
+  }
+  
