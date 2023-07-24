@@ -10,29 +10,20 @@
     padding-left: 20px;
     border-bottom: 2px solid var(--text)
 }
-.menubar_item {
-    padding: 12px 20px;
-}
-.MenuItem {
+
+.Menu {
     background-color: #4c5bd4;
     color: var(--text);
-    
-}
-.MenuItem li {
-    background-color:inherit;
-    border-radius: 0 !important;
+    font-size: 16px !important;
     width: 100%;
 }
-.MenuItem li span {
-    font-weight: bold;
-    font-size: 16px !important;
-    line-height: 19px !important;
-    display: flex;
-    align-items: center;
-    padding: 12px 20px !important;
-    background-repeat: no-repeat;
+.MenuItem {
+    color: #fff;
+    padding-left: 13px;
 }
-.MenuItem li:hover {
-    border-radius: 0 !important;
-    background-color: #ccc !important;
+.MenuItemChildren {
+    padding: 0 27px;
+    height: 100%;
+    display: block;
+    border-left: 2px solid #fff;
 }

@@ -3,7 +3,21 @@ import Link from "next/link";
 import { Menu } from "antd";
 import type { MenuProps } from "antd";
 import styles from "./navbar.module.css";
-import { IconHome, IconSoDoKPI, IconChuyenDoiSo } from "../data/icon";
+import {
+    IconHome,
+    IconLogoDiagram,
+    Logo365,
+    IconKpiFollow,
+    IconVote,
+    IconEstablish,
+    IconDepartment,
+    IconStaff,
+    IconDelete,
+    IconSetting,
+    IconDecentralization,
+    IconSettingAll,
+    IconChuyenDoiSo,
+} from "../data/icon";
 
 const linkSoDoKPIDon = "https://kpi.timviec365.vn/so-do-kpi.html";
 const linkSoDoKPIDa = "https://kpi.timviec365.vn/so-do-kpi-da-muc-tieu.html";
@@ -16,106 +30,294 @@ const linkPhanQuyen = "";
 const linkCaiDat = "";
 const linkCaiDatChung = "";
 
-const linkLoGo365 = "https://timviec365.vn/";
-
-const logo365 = "/logo/365logo.svg";
+// const linkLoGo365 = "https://timviec365.vn/";
+const linkLoGo365 = "#";
+const linkDie = "#";
 
 const items: MenuProps["items"] = [
     {
-        label: <Link href={linkLoGo365}>Trang chủ</Link>,
+        label: (
+            <Link className={styles.MenuItem} href={linkLoGo365}>
+                Trang chủ
+            </Link>
+        ),
         key: "trangchu",
         icon: <IconHome />,
     },
     {
-        label: "Sơ đồ KPI",
+        label: (
+            <Link className={styles.MenuItem} href={linkDie}>
+                Sơ đồ KPI
+            </Link>
+        ),
         key: "sodokpi",
-        icon: <IconSoDoKPI />,
+        icon: <IconLogoDiagram />,
         children: [
             {
-                label: <Link href={linkSoDoKPIDon}>KPI đơn mục tiêu</Link>,
+                label: (
+                    <Link
+                        className={styles.MenuItemChildren}
+                        href={linkSoDoKPIDon}
+                    >
+                        KPI đơn mục tiêu
+                    </Link>
+                ),
                 key: "kpidonmuctieu",
             },
             {
-                label: <Link href={linkSoDoKPIDa}>KPI đa mục tiêu</Link>,
+                label: (
+                    <Link
+                        className={styles.MenuItemChildren}
+                        href={linkSoDoKPIDa}
+                    >
+                        KPI đa mục tiêu
+                    </Link>
+                ),
                 key: "kpidamuctieu",
             },
         ],
     },
     {
-        label: "Theo dõi KPI",
+        label: (
+            <Link className={styles.MenuItem} href={linkDie}>
+                Theo dõi KPI
+            </Link>
+        ),
         key: "theodoikpi",
-        icon: <IconChuyenDoiSo />,
+        icon: <IconKpiFollow />,
         children: [
             {
-                label: <Link href={linkSoDoKPIDon}>KPI đơn mục tiêu</Link>,
+                label: (
+                    <Link
+                        className={styles.MenuItemChildren}
+                        href={linkSoDoKPIDon}
+                    >
+                        KPI đơn mục tiêu
+                    </Link>
+                ),
                 key: "theodoikpidonmuctieu",
             },
             {
-                label: <Link href={linkSoDoKPIDa}>KPI đa mục tiêu</Link>,
+                label: (
+                    <Link
+                        className={styles.MenuItemChildren}
+                        href={linkSoDoKPIDa}
+                    >
+                        KPI đa mục tiêu
+                    </Link>
+                ),
                 key: "theodoikpidamuctieu",
             },
         ],
     },
     {
-        label: <Link href={linkDanhGiaKPI}>Đánh giá KPI</Link>,
+        label: (
+            <Link className={styles.MenuItem} href={linkDanhGiaKPI}>
+                Đánh giá KPI
+            </Link>
+        ),
         key: "danhgiakpi",
+        icon: <IconVote />,
     },
     {
-        label: <Link href={linkThietLapKPI}>Thiết lập KPI</Link>,
+        label: (
+            <Link className={styles.MenuItem} href={linkThietLapKPI}>
+                Thiết lập KPI
+            </Link>
+        ),
         key: "thietlapkpi",
+        icon: <IconEstablish />,
     },
     {
-        label: <Link href={linkQuanLyPhongBan}>Quản lý phòng ban</Link>,
+        label: (
+            <Link className={styles.MenuItem} href={linkQuanLyPhongBan}>
+                Quản lý phòng ban
+            </Link>
+        ),
         key: "quanlyphongban",
+        icon: <IconDepartment />,
     },
     {
-        label: <Link href={linkQuanLyNhanVien}>Quản lý nhân viên</Link>,
+        label: (
+            <Link className={styles.MenuItem} href={linkQuanLyNhanVien}>
+                Quản lý nhân viên
+            </Link>
+        ),
         key: "quanlynhanvien",
+        icon: <IconStaff />,
     },
     {
-        label: <Link href={linkDuLieuDaXoa}>Dữ liệu đã xoá</Link>,
+        label: (
+            <Link className={styles.MenuItem} href={linkDuLieuDaXoa}>
+                Dữ liệu đã xoá
+            </Link>
+        ),
         key: "dulieudaxoa",
+        icon: <IconDelete />,
     },
     {
-        label: <Link href={linkPhanQuyen}>Phân quyền</Link>,
+        label: (
+            <Link className={styles.MenuItem} href={linkPhanQuyen}>
+                Phân quyền
+            </Link>
+        ),
         key: "phanquyen",
+        icon: <IconDecentralization />,
     },
     {
-        label: <Link href={linkCaiDat}>Cài đặt</Link>,
+        label: (
+            <Link className={styles.MenuItem} href={linkCaiDat}>
+                Cài đặt
+            </Link>
+        ),
         key: "caidat",
+        icon: <IconSetting />,
     },
     {
-        label: <Link href={linkCaiDatChung}>Cài đặt chung</Link>,
+        label: (
+            <Link className={styles.MenuItem} href={linkCaiDatChung}>
+                Cài đặt chung
+            </Link>
+        ),
         key: "caidatchung",
+        icon: <IconSettingAll />,
     },
     {
-        label: "Chuyển đối số 365",
+        label: (
+            <Link href={linkDie} className={styles.MenuItem}>
+                Chuyển đối số 365
+            </Link>
+        ),
         key: "chuyendoiso",
+        icon: <IconChuyenDoiSo />,
         children: [
             {
-                label: <Link href={linkSoDoKPIDon}>KPI đơn mục tiêu</Link>,
-                key: "",
+                label: (
+                    <Link
+                        className={styles.MenuItemChildren}
+                        href={linkSoDoKPIDon}
+                    >
+                        Chấm công
+                    </Link>
+                ),
+                key: "chamcong",
+            },
+            {
+                label: (
+                    <Link
+                        className={styles.MenuItemChildren}
+                        href={linkSoDoKPIDon}
+                    >
+                        Tính lương
+                    </Link>
+                ),
+                key: "tinhluong",
+            },
+            {
+                label: (
+                    <Link
+                        className={styles.MenuItemChildren}
+                        href={linkSoDoKPIDon}
+                    >
+                        Quản trị nhân sự
+                    </Link>
+                ),
+                key: "quantrinhansu",
+            },
+            {
+                label: (
+                    <Link
+                        className={styles.MenuItemChildren}
+                        href={linkSoDoKPIDon}
+                    >
+                        Văn thư lưu trữ
+                    </Link>
+                ),
+                key: "vanthuluutru",
+            },
+            {
+                label: (
+                    <Link
+                        className={styles.MenuItemChildren}
+                        href={linkSoDoKPIDon}
+                    >
+                        Truyền thông văn hoá
+                    </Link>
+                ),
+                key: "truyenthongvanhoa",
+            },
+            {
+                label: (
+                    <Link
+                        className={styles.MenuItemChildren}
+                        href={linkSoDoKPIDon}
+                    >
+                        Văn bản thành giọng nói
+                    </Link>
+                ),
+                key: "chuyendoivanbanthanhgiongnoi",
+            },
+            {
+                label: (
+                    <Link
+                        className={styles.MenuItemChildren}
+                        href={linkSoDoKPIDon}
+                    >
+                        Quản lý tài sản
+                    </Link>
+                ),
+                key: "quanlytaisan",
+            },
+            {
+                label: (
+                    <Link
+                        className={styles.MenuItemChildren}
+                        href={linkSoDoKPIDon}
+                    >
+                        Phần mềm phiên dịch
+                    </Link>
+                ),
+                key: "phanmemphiendich",
+            },
+            {
+                label: (
+                    <Link
+                        className={styles.MenuItemChildren}
+                        href={linkSoDoKPIDon}
+                    >
+                        DMS
+                    </Link>
+                ),
+                key: "dms",
+            },
+            {
+                label: (
+                    <Link
+                        className={styles.MenuItemChildren}
+                        href={linkSoDoKPIDon}
+                    >
+                        Phần mềm quản lý lịch biểu
+                    </Link>
+                ),
+                key: "quanlylichbieu",
             },
         ],
     },
 ];
 export default function Navbar() {
-    const onClick: MenuProps["onClick"] = (e) => {
-        console.log("click ", e);
-    };
-
     return (
         <div className={styles.main}>
             <div className={styles.menubar_logo}>
                 <Link href={linkLoGo365}>
-                    <img src={logo365} />
+                    <Logo365 />
                 </Link>
             </div>
-            <div className={styles.hps_part_three}>
+
+            <div>
                 <Menu
                     mode="inline"
-                    onClick={onClick}
-                    className={styles.MenuItem}
+                    id="NavMenu"
+                    className={styles.Menu}
                     items={items}
                 />
             </div>
