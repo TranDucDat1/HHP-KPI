@@ -1,6 +1,135 @@
 .hideOnSmallScreen {
   width: 24px;
-  height: 24px;
+  height: 16px;
+  margin-top: 30px;
+  cursor: pointer;
+}
+
+.header {
+  display: flex;
+  background-color: var(--nav_bg);
+  text-align: center;
+  color: #fff;
+  height: 100%;
+  width: 100%;
+  padding-inline: 20px;
+  /* line-height: 64px; */
+  justify-content: space-between;
+  /* box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.15); */
+}
+
+.hideOnIconMessageBlue {
+  display: none;
+}
+
+.hideOnIconNotifyBlue {
+  display: none;
+}
+
+.hideOnIconWarningBlue {
+  display: none;
+}
+
+.hideOnIconMessageWhite {
+  cursor: pointer;
+  margin-right: 53px;
+}
+
+.hideOnIconNotifyWhite {
+  cursor: pointer;
+  margin-right: 53px;
+}
+
+.hideOnIconWarningWhite {
+  cursor: pointer;
+  margin-right: 53px;
+}
+
+.headerRight {
+  display: flex;
+  align-items: center;
+  padding: 28px 31px 18px 0;
+}
+
+.avtUser {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+}
+
+.dropdown {
+  position: relative;
+}
+
+.headerInfoUser {
+  display: flex;
+  justify-content: center;
+}
+
+.info {
+  display: flex;
+  align-items: center;
+  padding: 5px 0;
+  color: var(--white);
+  font-size: 16px;
+  cursor: pointer;
+  max-width: 270px;
+}
+
+.nameUser {
+  width: 98px;
+  font-style: normal;
+  line-height: 28px;
+  text-align: center;
+  color: var(--white);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  margin: 0 5px;
+}
+
+.nameUserInfo {
+  font-style: normal;
+  line-height: 28px;
+  text-align: center;
+  color: var(--white);
+  display: flex;
+  align-items: center;
+  margin-left: 5px;
+}
+
+.badge {
+  width: 18px;
+  height: 18px;
+  position: absolute;
+  top: -5px;
+  right: -5px;
+  padding: 4px 0px !important;
+  border-radius: 50% !important;
+  background-color: #ff3333;
+  color: white;
+  display: inline-block;
+  font-size: 75%;
+  font-weight: 700;
+  line-height: 1;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: baseline;
+}
+
+.verticalBar {
+  color: var(--white);
+  margin-bottom: 2px;
+}
+
+.nameUserInfo::after {
+  content: "";
+  height: 0;
+  width: 0;
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  border-top: 10px solid var(--white);
+  margin-left: 10px;
 }
 
 /* layout.module.css */
@@ -8,5 +137,55 @@
 @media (min-width: 1024px) {
   .hideOnSmallScreen {
     display: none;
+  }
+  .header {
+    background-color: white;
+    justify-content: flex-end;
+  }
+
+  .hideOnIconMessageWhite {
+    display: none;
+  }
+
+  .hideOnIconNotifyWhite {
+    display: none;
+  }
+
+  .hideOnIconWarningWhite {
+    display: none;
+  }
+
+  .hideOnIconMessageBlue {
+    cursor: pointer;
+    margin-right: 53px;
+    display: block;
+  }
+  
+  .hideOnIconNotifyBlue {
+    cursor: pointer;
+    margin-right: 53px;
+    display: block;
+  }
+  
+  .hideOnIconWarningBlue {
+    cursor: pointer;
+    margin-right: 53px;
+    display: block;
+  }
+
+  .nameUser {
+    color: #474747;
+  }
+
+  .verticalBar {
+    color: #474747;
+  }
+
+  .nameUserInfo {
+    color: var(--nav_bg);
+  }
+
+  .nameUserInfo::after {
+    border-top: 10px solid #999999;
   }
 }
