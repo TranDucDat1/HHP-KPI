@@ -1,5 +1,8 @@
 import React from "react";
 import Head from "next/head";
+
+import Layout from "../../components/Layout"
+
 export interface AboutPageAProps {}
 
 export default function About(props: AboutPageAProps) {
@@ -9,9 +12,9 @@ export default function About(props: AboutPageAProps) {
         <title> About </title>
         <meta name="keywords" content="coders" />
       </Head>
-        <h1> Theo dõi kpi đơn mục tiêu </h1>
-        <p> Lorem ipsum dolor</p>
-        <p> Lorem ipsum dolor</p>
+      <Layout>
+        
+      </Layout>
     </>
   );
 }
