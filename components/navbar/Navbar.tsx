@@ -29,9 +29,10 @@ const linkDuLieuDaXoa = "https://kpi.timviec365.vn/du-lieu-da-xoa.html";
 const linkPhanQuyen = "";
 const linkCaiDat = "";
 const linkCaiDatChung = "";
+const theoDoikpiDonMucTieu = "http://localhost:3000/theo-doi-kpi-don-muc-tieu";
 
 // const linkLoGo365 = "https://timviec365.vn/";
-const linkLoGo365 = "#";
+const linkLoGo365 = "http://localhost:3000";
 const linkDie = "#";
 
 const items: MenuProps["items"] = [
@@ -90,7 +91,7 @@ const items: MenuProps["items"] = [
                 label: (
                     <Link
                         className={styles.MenuItemChildren}
-                        href={linkSoDoKPIDon}
+                        href={theoDoikpiDonMucTieu}
                     >
                         KPI đơn mục tiêu
                     </Link>
