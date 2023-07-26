@@ -1,0 +1,66 @@
+.moreOptionUser {
+  position: absolute;
+  will-change: transform;
+  top: 0px;
+  left: 0px;
+  transform: translate3d(-28px, 38px, 0px);
+  width: 300px;
+  background: #ffffff;
+  box-shadow: 1px 7px 15px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  float: left;
+  min-width: 10rem;
+  padding: 0.5rem 0;
+  margin: 0.125rem 0 0;
+  font-size: 1rem;
+  color: #212529;
+  text-align: left;
+  list-style: none;
+  border: 1px solid rgba(0,0,0,.15);
+  z-index: 1000;
+}
+
+.moreOptionUserHeader {
+  width: 100%;
+  text-align: center;
+  margin-top: 25px;
+}
+
+.moreOptionUserHeaderImg {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+}
+
+.nameCompany {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 19px;
+  color: #4c5bd4;
+  margin-top: 15px;
+  padding: 0px 20px;
+}
+
+.nameUserInfo {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  color: #4c5bd4;
+  margin-top: 8px;
+}
+
+.moreOptionUserBody {
+  width: 100%;
+  margin-top: 4px;
+}
+
+.infoAcc {
+  display: inline-block;
+  width: 218px;
+  color: #333;
+  padding-left: 13px;
+}
+
+.logOutBtn {
+  width: calc(100% - 30px);
+}

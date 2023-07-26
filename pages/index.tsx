@@ -7,7 +7,7 @@ export default function Home() {
   return (
     <> 
        <Head>
-          <title> Hompage </title>
+          <title> Homepage </title>
           <meta name="keywords" content ="coders"/>
           <link rel="shortcut icon" href="https://api-booking-app-aws-ec2.onrender.com/default.png" />
        </Head>
