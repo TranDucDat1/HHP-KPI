@@ -1,8 +1,8 @@
 .main {
     display: block;
     /* display: flex; */
-    /* justify-content: space-between;
-    background: #f7f8fc; */
+    /* justify-content: space-between; */
+    background: #f7f8fc;
 }
 
 .nav {
@@ -13,8 +13,9 @@
     overflow: hidden;
 }
 .content {
-    height: 1200px;
-    background-color: #f7f8fc;
+    width: 100%;
+    min-height: 90vh;
+    padding: 30px 15px;
 }
 .header {
     position: relative;
@@ -40,6 +41,9 @@
         display: block;
         width: 26%;
         height: 100vh;
+    }
+    .content {
+        padding: 30px;
     }
   }
   
