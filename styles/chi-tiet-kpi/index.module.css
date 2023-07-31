@@ -1,0 +1,269 @@
+.dDetailCom {
+  width: 100%;
+  background: #ffffff;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+  margin-top: 20px;
+}
+
+.dDetailComV1 {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 15px;
+}
+
+.dDetailCom1 {
+  width: calc(100% - 170px);
+  display: flex;
+}
+
+.dDetailCom1V2 {
+  width: calc(100% - 75px);
+  margin-left: 14px;
+}
+
+.dDetailComText {
+  margin-bottom: 8px;
+  font-weight: bold;
+  font-size: 15px;
+  line-height: 18px;
+  color: #4c5bd4;
+}
+
+.dDetailComText1 {
+  margin-bottom: 8px;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  color: #474747;
+}
+
+.dDetailText {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  color: #666666;
+}
+
+.dDetailComText3 {
+  margin-bottom: 8px;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  color: #474747;
+}
+
+.dDetailFollow {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 8px;
+}
+
+.dDetailComText2 {
+  display: inline-block;
+  margin-right: 10px;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  color: #474747;
+}
+
+.dDetailDetail {
+  display: flex;
+  margin-right: 20px;
+}
+
+.dDetailImg {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.dDetailName {
+  margin-left: 10px;
+}
+
+.dDetailText1 {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  color: #999999;
+}
+
+.dDetailCom2 {
+  width: 148px;
+  display: flex;
+  flex-direction: column;
+}
+
+.dDetailComV2 {
+  width: 100%;
+  overflow-x: scroll;
+}
+
+.dDetailComV2s {
+  width: 100%;
+}
+
+.dDetail1 {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 13px 15px;
+  background: #dddddd;
+}
+
+.dDetail1Text {
+  width: 40%;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 16px;
+  color: #474747;
+}
+
+.dDetail1Text1 {
+  width: 20%;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 16px;
+  color: #474747;
+}
+
+.dDetail1Text2 {
+  width: 15%;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 16px;
+  color: #474747;
+}
+
+.dDetail1Text3 {
+  width: 15%;
+  text-align: center;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 16px;
+  color: #474747;
+}
+
+.dDetail1Text4 {
+  width: 10%;
+  text-align: right;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 16px;
+  color: #474747;
+}
+
+.dDetailComV2a {
+  width: 100%;
+  padding: 0 15px 15px;
+}
+
+.dPercentDetail1 {
+  width: 100%;
+  padding: 20px 0 20px 20px;
+  border-bottom: 1px dashed #cccccc;
+  position: relative;
+}
+
+.dPercentDetail1v1 {
+  width: 100%;
+  display: inline-flex;
+}
+
+.dClassDetail {
+  width: 40%;
+}
+
+.dPercentDetailV1Text {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 16px;
+  padding-right: 15px;
+  display: flex;
+  align-items: center;
+  color: #474747;
+}
+
+.dPercentDetailV1Text::before {
+  content: "";
+  width: 0;
+  height: 0;
+  border-top: 7px solid transparent;
+  border-bottom: 7px solid transparent;
+  border-left: 7px solid #4c5bd4;
+  position: absolute;
+  left: 0;
+}
+
+.dDatetime {
+  width: 170px;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 15px;
+  display: flex;
+  align-items: center;
+  color: #999999;
+  margin-top: 5px;
+}
+
+.dPercentDetailV1Text2 {
+  display: flex;
+  align-items: center;
+  width: 20%;
+}
+
+.dImageName {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  margin-right: 5px;
+}
+
+.dNameGroup {
+  width: 115px;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 27px;
+  align-items: center;
+  color: #474747;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  display: block;
+  margin: 0 18px 0 5px;
+}
+
+.dPercentDetailV1Text3 {
+  display: flex;
+  align-items: center;
+  width: 15%;
+}
+
+.dDetailDetail {
+  display: flex;
+  margin-right: 20px;
+}
+
+.dDepartmentNumber {
+  background: #474747;
+  color: #fff;
+  padding-left: 3px;
+  line-height: 25px;
+  font-size: 13px;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  display: inline-block;
+  cursor: context-menu;
+  margin-right: 3px;
+}
+
+.dPercentDetailV1Text4 {
+  width: 10%;
+}
